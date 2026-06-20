@@ -1,0 +1,146 @@
+/* ── Selector ───────────────────────────────────── */
+.selector {
+  margin-bottom: 1.5rem;
+}
+
+.selectorTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.875rem;
+  line-height: 1.5;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  padding: 0.4rem 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.chipActive {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+.chipActive:hover {
+  color: #fff;
+  opacity: 0.92;
+}
+
+.chipApprox {
+  margin-left: 0.2rem;
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+/* ── Notas ──────────────────────────────────────── */
+.notas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nota {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  background: var(--color-accent-light);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: 0.625rem 0.875rem;
+}
+
+.notaWarn {
+  color: #b26a00;
+  font-style: italic;
+}
+
+/* ── Timeline ───────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: start;
+}
+
+.row:last-child { border-bottom: none; }
+
+.age {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  padding-top: 0.2rem;
+  white-space: nowrap;
+}
+
+.chipsVacunas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.vacChip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.vacAbrev {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.vacNombre {
+  font-size: 0.82rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* ── Disclaimer ─────────────────────────────────── */
+.disclaimer {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-accent-light);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-accent);
+  font-size: 0.838rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 480px) {
+  .row { grid-template-columns: 84px 1fr; }
+}
